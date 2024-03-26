@@ -8,6 +8,17 @@ public class Pessoa {
     private String cpf;
     private int idade;
     private String endereco;
+    private String nomePessoa;
+    
+    // Construtor Padrão
+    public Pessoa(){
+         // Inicializações padrão        
+    }
+    // Construtor que inicializa o atributo nomePessoa
+    public Pessoa(String nome){
+        this.nomePessoa = nome;
+    
+    }
 
     // Getters e Setters para nome
     public String getNome() {
@@ -53,6 +64,15 @@ public class Pessoa {
     public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
+    // Getters e Setters
+    public String getNomePessoa() {
+        return nomePessoa;
+    }
+
+    public void setNomePessoa(String nomePessoa) {
+        this.nomePessoa = nomePessoa;
+    }
+    
 }
 
 // Classe para testes
